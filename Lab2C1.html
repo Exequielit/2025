@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de Mí</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #d8bfd8, #dda0dd, #ba55d3);
+      color: #2d3436;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      width: 90%;
+      padding: 20px;
+    }
+    .grid-item {
+      background-color: #ffffff;
+      padding: 25px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .grid-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+    h2 {
+      color: #4b0082;
+    }
+    p {
+      font-size: 1rem;
+      color: #636e72;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item" id="admire">
+      <h2>Persona a quien admiro</h2>
+      <p>Cristiano Ronaldo</p>
+    </div>
+    <div class="grid-item" id="goal">
+      <h2>Meta futura</h2>
+      <p>Graduarme y tener una casa propia</p>
+    </div>
+    <div class="grid-item" id="music">
+      <h2>Género musical favorito</h2>
+      <p>No cuento con un género afin, me gusta la música en general</p>
+    </div>
+    <div class="grid-item" id="live">
+      <h2>Algo sin lo que no podría vivir</h2>
+      <p>Oxígeno xd</p>
+    </div>
+    <div class="grid-item" id="talent">
+      <h2>Un talento que poseo</h2>
+      <p>Hacer pizzas y pan</p>
+    </div>
+    <div class="grid-item" id="animal">
+      <h2>Mi animal favorito</h2>
+      <p>Las guacamayas</p>
+    </div>
+  </div>
+
+  <script>
+    // #1: Evento Click Persona a quien admiro
+    document.getElementById('admire').addEventListener('click', () => {
+      alert('Cristiano Ronaldo: The Gratest Of All Time (The GOAT)');
+    });
+
+    // #2: Evento Mouseover Meta futura
+    document.getElementById('goal').addEventListener('mouseover', () => {
+      document.getElementById('goal').style.backgroundColor = '#ff0000';
+    });
+
+    // #3: Evento Mouseout en Meta futura
+    document.getElementById('goal').addEventListener('mouseout', () => {
+      document.getElementById('goal').style.backgroundColor = '#0000ff';
+    });
+
+
+    // #4:Evento Tecla presionada en todo el documento
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 't') {
+        alert('Lo Aprendí trabajando en la Pizza Hut y el Super Selectos (Demasiada chamba)(A los solteros no les gusta febrero por el día de los enamorads a mi por que que solo son 27 y no 31 días de chamba)');
+      }
+    });
+
+    // #5: Cambio de color al hacer clic en "Mi animal favorito"
+    document.getElementById('animal').addEventListener('click', () => {
+      document.getElementById('animal').style.backgroundColor = '#FFC0EB';
+    });
+  </script>
+</body>
+</html>
