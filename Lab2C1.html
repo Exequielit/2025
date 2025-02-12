@@ -60,11 +60,11 @@
     </div>
     <div class="grid-item" id="live">
       <h2>Algo sin lo que no podría vivir</h2>
-      <p>Oxígeno xd</p>
+      <p>Oxígeno xd (Doble click)</p>
     </div>
     <div class="grid-item" id="talent">
       <h2>Un talento que poseo</h2>
-      <p>Hacer pizzas y pan</p>
+      <p>Hacer pizzas y pan (press z)</p>
     </div>
     <div class="grid-item" id="animal">
       <h2>Mi animal favorito</h2>
@@ -78,28 +78,38 @@
       alert('Cristiano Ronaldo: The Gratest Of All Time (The GOAT)');
     });
 
-    // #2: Evento Mouseover Meta futura
+    // #2: Evento Mouseover y Mouseout cambio de color Meta futura
     document.getElementById('goal').addEventListener('mouseover', () => {
       document.getElementById('goal').style.backgroundColor = '#ff0000';
     });
-
-    // #3: Evento Mouseout en Meta futura
+    
     document.getElementById('goal').addEventListener('mouseout', () => {
       document.getElementById('goal').style.backgroundColor = '#0000ff';
     });
 
 
-    // #4:Evento Tecla presionada en todo el documento
+    // #3:Evento Tecla presionada en todo el documento
     document.addEventListener('keydown', (event) => {
-      if (event.key === 't') {
-        alert('Lo Aprendí trabajando en la Pizza Hut y el Super Selectos (Demasiada chamba)(A los solteros no les gusta febrero por el día de los enamorads a mi por que que solo son 27 y no 31 días de chamba)');
+      if (event.key === 'z') {
+        alert('Lo Aprendí trabajando en la Pizza Hut y el Super Selectos (Demasiada chamba)(Yo no descanso de la chamba los sábados y domingos, la chamba descansa de mi👨‍💼📊📈📁)');
       }
     });
 
-    // #5: Eventp click Cambio de color Mi animal favorito
+    // #4: Eventp click Cambio de color Mi animal favorito
     document.getElementById('animal').addEventListener('click', () => {
       document.getElementById('animal').style.backgroundColor = '#FFC0EB';
     });
+    
+    // #5: Evento Mouseover agrandar sobre Género musical favorito
+    document.getElementById('music').addEventListener('mouseover', () => {
+      document.getElementById('music').style.transform = 'scale(1.1)';
+    });
+
+    // #6: Evento Double-click sobre Algo sin lo que no podría vivir
+    document.getElementById('live').addEventListener('dblclick', () => {
+      document.getElementById('live').style.backgroundColor = '#00FFFF';
+    });
+
   </script>
 </body>
 </html>
