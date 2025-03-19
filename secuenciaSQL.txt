@@ -1,0 +1,3 @@
+CREATE TABLE `universidad`.`tblestudiantes` (`Codigo` INT NOT NULL AUTO_INCREMENT , `Nombre` VARCHAR(200) NOT NULL , `Fecha_nacimiento` DATE NOT NULL , `carrera` VARCHAR(200) NOT NULL , PRIMARY KEY (`Codigo`)) ENGINE = InnoDB;
+
+INSERT INTO `tblestudiantes` (`Codigo`, `Nombre`, `Fecha_nacimiento`, `carrera`) VALUES (NULL, 'Kilmar Alfaro', '2005-03-30', 'Ingenieria en sistemas y redes');
